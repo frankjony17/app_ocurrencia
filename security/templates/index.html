@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block javascripts %}<script type="text/javascript">
+    Ext.application({
+        name: 'etecsa',
+        appFolder: '/static',
+        controllers: [
+            'viewport',
+            'seguridad_tree',
+            'nomenclador_tree',
+            'pendiente_tree',
+            'user',
+            'nomenclador.cargo',
+            'nomenclador.unidad_organizativa',
+            'nomenclador.trabajador',
+            'nomenclador.estado',
+            'nomenclador.informado_atpl',
+            'nomenclador.departamento_uotpl',
+            'nomenclador.personal_mincom_tpl',
+            'pendiente.tipo',
+            'pendiente.estado',
+            'pendiente.elemento'
+        ],
+        launch: function() {
+            Ext.create('etecsa.view.viewport');
+        }
+    });
+</script>{% endblock %}

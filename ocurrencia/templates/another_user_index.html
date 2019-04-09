@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block javascripts %}<script type="text/javascript">
+    Ext.application({
+        name: 'etecsa',
+        appFolder: '/static',
+        {#controllers: [#}
+        {#    'another_user_viewport'#}
+        {#],#}
+        launch: function() {
+            Ext.create('etecsa.view.another_user_viewport', {
+                user: "{{ user.trabajador.nombre }} {{ user.trabajador.apellidos }}",
+                userid: "{{ user.trabajador.id }}"
+            });
+        }
+    });
+</script>{% endblock %}

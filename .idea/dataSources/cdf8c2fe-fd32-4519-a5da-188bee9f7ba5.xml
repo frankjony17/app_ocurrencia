@@ -1,0 +1,2181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - ocurrencia_cdnt_db@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12373</ObjectId>
+    </database>
+    <database id="3" parent="1" name="ocurrencia_cdnt_db">
+      <ObjectId>19624</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="4" parent="1" name="etecsa_cd_db">
+      <ObjectId>16781</ObjectId>
+    </database>
+    <role id="5" parent="1" name="cdnt_usr">
+      <ObjectId>16393</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="6" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="7" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-05-20.10:10:38.569</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3206</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="9" parent="3" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="10" parent="3" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="11" parent="3" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="12" parent="3" name="information_schema">
+      <ObjectId>12081</ObjectId>
+    </schema>
+    <sequence id="13" parent="7" name="pendiente_elemento_id_seq">
+      <ObjectId>28071</ObjectId>
+      <StateNumber>3206</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="14" parent="7" name="pendiente_estado_id_seq">
+      <ObjectId>28082</ObjectId>
+      <StateNumber>3206</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="15" parent="7" name="pendiente_id_seq">
+      <ObjectId>28093</ObjectId>
+      <StateNumber>3206</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="16" parent="7" name="pendiente_pendiente_id_seq">
+      <ObjectId>28104</ObjectId>
+      <StateNumber>3206</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="17" parent="7" name="pendiente_tipo_id_seq">
+      <ObjectId>28112</ObjectId>
+      <StateNumber>3206</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="18" parent="7" name="auth_group_id_seq">
+      <ObjectId>19746</ObjectId>
+      <StateNumber>2606</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="19" parent="7" name="auth_group_permissions_id_seq">
+      <ObjectId>19756</ObjectId>
+      <StateNumber>2606</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="20" parent="7" name="auth_permission_id_seq">
+      <ObjectId>19738</ObjectId>
+      <StateNumber>2606</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="21" parent="7" name="auth_user_groups_id_seq">
+      <ObjectId>19802</ObjectId>
+      <StateNumber>2617</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="22" parent="7" name="auth_user_id_seq">
+      <ObjectId>19787</ObjectId>
+      <StateNumber>2617</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="23" parent="7" name="auth_user_user_permissions_id_seq">
+      <ObjectId>19810</ObjectId>
+      <StateNumber>2617</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="24" parent="7" name="django_admin_log_id_seq">
+      <ObjectId>19854</ObjectId>
+      <StateNumber>2619</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="25" parent="7" name="django_content_type_id_seq">
+      <ObjectId>19728</ObjectId>
+      <StateNumber>2602</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="26" parent="7" name="django_migrations_id_seq">
+      <ObjectId>19625</ObjectId>
+      <StateNumber>2599</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="27" parent="7" name="nomenclador_cargo_id_seq">
+      <ObjectId>19636</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="28" parent="7" name="nomenclador_departamento_uo_tpl_id_seq">
+      <ObjectId>19646</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="29" parent="7" name="nomenclador_estado_id_seq">
+      <ObjectId>19658</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="30" parent="7" name="nomenclador_informado_a_tpl_id_seq">
+      <ObjectId>19668</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="31" parent="7" name="nomenclador_mincom_persona_tpl_id_seq">
+      <ObjectId>19678</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="32" parent="7" name="nomenclador_trabajador_id_seq">
+      <ObjectId>19688</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="33" parent="7" name="nomenclador_unidad_organizativa_id_seq">
+      <ObjectId>19696</ObjectId>
+      <StateNumber>2600</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="34" parent="7" name="ocurrencia_composicion_turno_id_seq">
+      <ObjectId>19880</ObjectId>
+      <StateNumber>2624</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="35" parent="7" name="ocurrencia_entrega_guardia_id_seq">
+      <ObjectId>19888</ObjectId>
+      <StateNumber>2624</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="36" parent="7" name="ocurrencia_informado_a_id_seq">
+      <ObjectId>19998</ObjectId>
+      <StateNumber>2628</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="37" parent="7" name="ocurrencia_instruccion_relevo_id_seq">
+      <ObjectId>19896</ObjectId>
+      <StateNumber>2624</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="38" parent="7" name="ocurrencia_ocurrencia_id_seq">
+      <ObjectId>19907</ObjectId>
+      <StateNumber>2624</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="39" parent="7" name="ocurrencia_turno_guardia_id_seq">
+      <ObjectId>19918</ObjectId>
+      <StateNumber>2624</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="40" parent="7" name="auth_group">
+      <ObjectId>19748</ObjectId>
+      <StateNumber>2617</StateNumber>
+    </table>
+    <table id="41" parent="7" name="auth_group_permissions">
+      <ObjectId>19758</ObjectId>
+      <StateNumber>2606</StateNumber>
+    </table>
+    <table id="42" parent="7" name="auth_permission">
+      <ObjectId>19740</ObjectId>
+      <StateNumber>2617</StateNumber>
+    </table>
+    <table id="43" parent="7" name="auth_user">
+      <ObjectId>19789</ObjectId>
+      <StateNumber>2619</StateNumber>
+    </table>
+    <table id="44" parent="7" name="auth_user_groups">
+      <ObjectId>19804</ObjectId>
+      <StateNumber>2617</StateNumber>
+    </table>
+    <table id="45" parent="7" name="auth_user_user_permissions">
+      <ObjectId>19812</ObjectId>
+      <StateNumber>2617</StateNumber>
+    </table>
+    <table id="46" parent="7" name="django_admin_log">
+      <ObjectId>19856</ObjectId>
+      <StateNumber>2619</StateNumber>
+    </table>
+    <table id="47" parent="7" name="django_content_type">
+      <ObjectId>19730</ObjectId>
+      <StateNumber>2619</StateNumber>
+    </table>
+    <table id="48" parent="7" name="django_migrations">
+      <ObjectId>19627</ObjectId>
+      <StateNumber>2599</StateNumber>
+    </table>
+    <table id="49" parent="7" name="django_session">
+      <ObjectId>20018</ObjectId>
+      <StateNumber>2630</StateNumber>
+    </table>
+    <table id="50" parent="7" name="nomenclador_cargo">
+      <ObjectId>19638</ObjectId>
+      <StateNumber>2600</StateNumber>
+    </table>
+    <table id="51" parent="7" name="nomenclador_departamento_uo_tpl">
+      <ObjectId>19648</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="52" parent="7" name="nomenclador_estado">
+      <ObjectId>19660</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="53" parent="7" name="nomenclador_informado_a_tpl">
+      <ObjectId>19670</ObjectId>
+      <StateNumber>2628</StateNumber>
+    </table>
+    <table id="54" parent="7" name="nomenclador_mincom_persona_tpl">
+      <ObjectId>19680</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="55" parent="7" name="nomenclador_trabajador">
+      <ObjectId>19690</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="56" parent="7" name="nomenclador_unidad_organizativa">
+      <ObjectId>19698</ObjectId>
+      <StateNumber>2600</StateNumber>
+    </table>
+    <table id="57" parent="7" name="ocurrencia">
+      <ObjectId>19909</ObjectId>
+      <StateNumber>2628</StateNumber>
+    </table>
+    <table id="58" parent="7" name="ocurrencia_composicion_turno">
+      <ObjectId>19882</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="59" parent="7" name="ocurrencia_entrega_guardia">
+      <ObjectId>19890</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="60" parent="7" name="ocurrencia_informado_a">
+      <ObjectId>20000</ObjectId>
+      <StateNumber>2628</StateNumber>
+    </table>
+    <table id="61" parent="7" name="ocurrencia_instruccion_relevo">
+      <ObjectId>19898</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="62" parent="7" name="ocurrencia_turno_guardia">
+      <ObjectId>19920</ObjectId>
+      <StateNumber>2624</StateNumber>
+    </table>
+    <table id="63" parent="7" name="pendiente">
+      <ObjectId>28095</ObjectId>
+      <StateNumber>3206</StateNumber>
+    </table>
+    <table id="64" parent="7" name="pendiente_elemento">
+      <ObjectId>28073</ObjectId>
+      <StateNumber>3206</StateNumber>
+    </table>
+    <table id="65" parent="7" name="pendiente_estado">
+      <ObjectId>28084</ObjectId>
+      <StateNumber>3206</StateNumber>
+    </table>
+    <table id="66" parent="7" name="pendiente_pendiente">
+      <ObjectId>28106</ObjectId>
+      <StateNumber>3206</StateNumber>
+    </table>
+    <table id="67" parent="7" name="pendiente_tipo">
+      <ObjectId>28114</ObjectId>
+      <StateNumber>3206</StateNumber>
+    </table>
+    <column id="68" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_group_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_group_id_seq</SequenceName>
+    </column>
+    <column id="69" parent="40" name="name">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="70" parent="40" name="auth_group_pkey">
+      <ObjectId>19752</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="71" parent="40" name="auth_group_name_key">
+      <ObjectId>19754</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="72" parent="40" name="auth_group_name_a6ea08ec_like">
+      <ObjectId>19772</ObjectId>
+      <ColNames>name</ColNames>
+    </index>
+    <key id="73" parent="40" name="auth_group_pkey">
+      <ObjectId>19753</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_group_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="74" parent="40" name="auth_group_name_key">
+      <ObjectId>19755</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>auth_group_name_key</UnderlyingIndexName>
+    </key>
+    <column id="75" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_group_permissions_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_group_permissions_id_seq</SequenceName>
+    </column>
+    <column id="76" parent="41" name="group_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="77" parent="41" name="permission_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="78" parent="41" name="auth_group_permissions_pkey">
+      <ObjectId>19762</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="79" parent="41" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+      <ObjectId>19783</ObjectId>
+      <ColNames>group_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="80" parent="41" name="auth_group_permissions_group_id_b120cbf9">
+      <ObjectId>19785</ObjectId>
+      <ColNames>group_id</ColNames>
+    </index>
+    <index id="81" parent="41" name="auth_group_permissions_permission_id_84c5c92e">
+      <ObjectId>19786</ObjectId>
+      <ColNames>permission_id</ColNames>
+    </index>
+    <key id="82" parent="41" name="auth_group_permissions_pkey">
+      <ObjectId>19763</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_group_permissions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="83" parent="41" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+      <ObjectId>19784</ObjectId>
+      <ColNames>group_id
+permission_id</ColNames>
+      <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="84" parent="41" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+      <ObjectId>19773</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>group_id</ColNames>
+      <RefTableId>19748</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_group</RefTableName>
+      <RefKeyName>auth_group_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="85" parent="41" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+      <ObjectId>19778</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>permission_id</ColNames>
+      <RefTableId>19740</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_permission</RefTableName>
+      <RefKeyName>auth_permission_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="86" parent="42" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_permission_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_permission_id_seq</SequenceName>
+    </column>
+    <column id="87" parent="42" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2608</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="88" parent="42" name="content_type_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="89" parent="42" name="codename">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2606</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="90" parent="42" name="auth_permission_pkey">
+      <ObjectId>19744</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="91" parent="42" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+      <ObjectId>19769</ObjectId>
+      <ColNames>content_type_id
+codename</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="92" parent="42" name="auth_permission_content_type_id_2f476e4b">
+      <ObjectId>19771</ObjectId>
+      <ColNames>content_type_id</ColNames>
+    </index>
+    <key id="93" parent="42" name="auth_permission_pkey">
+      <ObjectId>19745</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_permission_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="94" parent="42" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+      <ObjectId>19770</ObjectId>
+      <ColNames>content_type_id
+codename</ColNames>
+      <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="95" parent="42" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+      <ObjectId>19764</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>content_type_id</ColNames>
+      <RefTableId>19730</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>django_content_type</RefTableName>
+      <RefKeyName>django_content_type_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="96" parent="43" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_user_id_seq</SequenceName>
+    </column>
+    <column id="97" parent="43" name="password">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="98" parent="43" name="is_superuser">
+      <Position>3</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="99" parent="43" name="username">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="100" parent="43" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2617</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="101" parent="43" name="last_login">
+      <Position>6</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <StateNumber>2617</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="102" parent="43" name="is_active">
+      <Position>7</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="103" parent="43" name="trabajador_id">
+      <Position>8</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>2617</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="104" parent="43" name="auth_user_pkey">
+      <ObjectId>19796</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="105" parent="43" name="auth_user_username_key">
+      <ObjectId>19798</ObjectId>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="106" parent="43" name="auth_user_email_key">
+      <ObjectId>19800</ObjectId>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="107" parent="43" name="auth_user_username_6821ab7c_like">
+      <ObjectId>19823</ObjectId>
+      <ColNames>username</ColNames>
+    </index>
+    <index id="108" parent="43" name="auth_user_email_1c89df09_like">
+      <ObjectId>19824</ObjectId>
+      <ColNames>email</ColNames>
+    </index>
+    <index id="109" parent="43" name="auth_user_trabajador_id_5a80f62e">
+      <ObjectId>19825</ObjectId>
+      <ColNames>trabajador_id</ColNames>
+    </index>
+    <key id="110" parent="43" name="auth_user_pkey">
+      <ObjectId>19797</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_user_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="111" parent="43" name="auth_user_username_key">
+      <ObjectId>19799</ObjectId>
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>auth_user_username_key</UnderlyingIndexName>
+    </key>
+    <key id="112" parent="43" name="auth_user_email_key">
+      <ObjectId>19801</ObjectId>
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>auth_user_email_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="113" parent="43" name="auth_user_trabajador_id_5a80f62e_fk_nomenclador_trabajador_id">
+      <ObjectId>19818</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>trabajador_id</ColNames>
+      <RefTableId>19690</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_trabajador</RefTableName>
+      <RefKeyName>nomenclador_trabajador_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="114" parent="44" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_user_groups_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_user_groups_id_seq</SequenceName>
+    </column>
+    <column id="115" parent="44" name="user_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="116" parent="44" name="group_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="117" parent="44" name="auth_user_groups_pkey">
+      <ObjectId>19808</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="118" parent="44" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+      <ObjectId>19836</ObjectId>
+      <ColNames>user_id
+group_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="119" parent="44" name="auth_user_groups_user_id_6a12ed8b">
+      <ObjectId>19838</ObjectId>
+      <ColNames>user_id</ColNames>
+    </index>
+    <index id="120" parent="44" name="auth_user_groups_group_id_97559544">
+      <ObjectId>19839</ObjectId>
+      <ColNames>group_id</ColNames>
+    </index>
+    <key id="121" parent="44" name="auth_user_groups_pkey">
+      <ObjectId>19809</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_user_groups_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="122" parent="44" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+      <ObjectId>19837</ObjectId>
+      <ColNames>user_id
+group_id</ColNames>
+      <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="123" parent="44" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+      <ObjectId>19826</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>user_id</ColNames>
+      <RefTableId>19789</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>auth_user_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="124" parent="44" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+      <ObjectId>19831</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>group_id</ColNames>
+      <RefTableId>19748</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_group</RefTableName>
+      <RefKeyName>auth_group_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="125" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <DefaultExpression>nextval(&apos;auth_user_user_permissions_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>auth_user_user_permissions_id_seq</SequenceName>
+    </column>
+    <column id="126" parent="45" name="user_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="127" parent="45" name="permission_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2617</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="128" parent="45" name="auth_user_user_permissions_pkey">
+      <ObjectId>19816</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="129" parent="45" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+      <ObjectId>19850</ObjectId>
+      <ColNames>user_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="130" parent="45" name="auth_user_user_permissions_user_id_a95ead1b">
+      <ObjectId>19852</ObjectId>
+      <ColNames>user_id</ColNames>
+    </index>
+    <index id="131" parent="45" name="auth_user_user_permissions_permission_id_1fbb5f2c">
+      <ObjectId>19853</ObjectId>
+      <ColNames>permission_id</ColNames>
+    </index>
+    <key id="132" parent="45" name="auth_user_user_permissions_pkey">
+      <ObjectId>19817</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>auth_user_user_permissions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="133" parent="45" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+      <ObjectId>19851</ObjectId>
+      <ColNames>user_id
+permission_id</ColNames>
+      <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="134" parent="45" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+      <ObjectId>19840</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>user_id</ColNames>
+      <RefTableId>19789</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>auth_user_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="135" parent="45" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+      <ObjectId>19845</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>permission_id</ColNames>
+      <RefTableId>19740</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_permission</RefTableName>
+      <RefKeyName>auth_permission_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="136" parent="46" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <DefaultExpression>nextval(&apos;django_admin_log_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>django_admin_log_id_seq</SequenceName>
+    </column>
+    <column id="137" parent="46" name="action_time">
+      <Position>2</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="138" parent="46" name="object_id">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>2619</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="139" parent="46" name="object_repr">
+      <Position>4</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="140" parent="46" name="action_flag">
+      <Position>5</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="141" parent="46" name="change_message">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="142" parent="46" name="content_type_id">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>2619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="143" parent="46" name="user_id">
+      <Position>8</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2619</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="144" parent="46" name="django_admin_log_pkey">
+      <ObjectId>19864</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="145" parent="46" name="django_admin_log_content_type_id_c4bce8eb">
+      <ObjectId>19876</ObjectId>
+      <ColNames>content_type_id</ColNames>
+    </index>
+    <index id="146" parent="46" name="django_admin_log_user_id_c564eba6">
+      <ObjectId>19877</ObjectId>
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="147" parent="46" name="django_admin_log_pkey">
+      <ObjectId>19865</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>django_admin_log_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="148" parent="46" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+      <ObjectId>19866</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>content_type_id</ColNames>
+      <RefTableId>19730</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>django_content_type</RefTableName>
+      <RefKeyName>django_content_type_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="149" parent="46" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+      <ObjectId>19871</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>user_id</ColNames>
+      <RefTableId>19789</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>auth_user_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <check id="150" parent="46" name="django_admin_log_action_flag_check">
+      <ObjectId>19860</ObjectId>
+      <ColNames>action_flag</ColNames>
+      <Predicate>action_flag &gt;= 0</Predicate>
+    </check>
+    <column id="151" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2602</StateNumber>
+      <DefaultExpression>nextval(&apos;django_content_type_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>django_content_type_id_seq</SequenceName>
+    </column>
+    <column id="152" parent="47" name="app_label">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2602</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="153" parent="47" name="model">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2602</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="154" parent="47" name="django_content_type_pkey">
+      <ObjectId>19734</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="155" parent="47" name="django_content_type_app_label_model_76bd3d3b_uniq">
+      <ObjectId>19736</ObjectId>
+      <ColNames>app_label
+model</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="156" parent="47" name="django_content_type_pkey">
+      <ObjectId>19735</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>django_content_type_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="157" parent="47" name="django_content_type_app_label_model_76bd3d3b_uniq">
+      <ObjectId>19737</ObjectId>
+      <ColNames>app_label
+model</ColNames>
+      <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
+    </key>
+    <column id="158" parent="48" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2599</StateNumber>
+      <DefaultExpression>nextval(&apos;django_migrations_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>django_migrations_id_seq</SequenceName>
+    </column>
+    <column id="159" parent="48" name="app">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2599</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="160" parent="48" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2599</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="161" parent="48" name="applied">
+      <Position>4</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2599</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <index id="162" parent="48" name="django_migrations_pkey">
+      <ObjectId>19634</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="163" parent="48" name="django_migrations_pkey">
+      <ObjectId>19635</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>django_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="164" parent="49" name="session_key">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2630</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="165" parent="49" name="session_data">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2630</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="166" parent="49" name="expire_date">
+      <Position>3</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2630</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <index id="167" parent="49" name="django_session_pkey">
+      <ObjectId>20024</ObjectId>
+      <ColNames>session_key</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="168" parent="49" name="django_session_session_key_c0390e0f_like">
+      <ObjectId>20026</ObjectId>
+      <ColNames>session_key</ColNames>
+    </index>
+    <index id="169" parent="49" name="django_session_expire_date_a5c62663">
+      <ObjectId>20027</ObjectId>
+      <ColNames>expire_date</ColNames>
+    </index>
+    <key id="170" parent="49" name="django_session_pkey">
+      <ObjectId>20025</ObjectId>
+      <ColNames>session_key</ColNames>
+      <UnderlyingIndexName>django_session_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="171" parent="50" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_cargo_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_cargo_id_seq</SequenceName>
+    </column>
+    <column id="172" parent="50" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="173" parent="50" name="descripcion">
+      <Position>3</Position>
+      <DataType>varchar(74)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="174" parent="50" name="nomenclador_cargo_pkey">
+      <ObjectId>19642</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="175" parent="50" name="nomenclador_cargo_nombre_key">
+      <ObjectId>19644</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="176" parent="50" name="nomenclador_cargo_nombre_47b151bf_like">
+      <ObjectId>19708</ObjectId>
+      <ColNames>nombre</ColNames>
+    </index>
+    <key id="177" parent="50" name="nomenclador_cargo_pkey">
+      <ObjectId>19643</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_cargo_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="178" parent="50" name="nomenclador_cargo_nombre_key">
+      <ObjectId>19645</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>nomenclador_cargo_nombre_key</UnderlyingIndexName>
+    </key>
+    <column id="179" parent="51" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_departamento_uo_tpl_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_departamento_uo_tpl_id_seq</SequenceName>
+    </column>
+    <column id="180" parent="51" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="181" parent="51" name="acronimo">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="182" parent="51" name="telefonos">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="183" parent="51" name="email">
+      <Position>5</Position>
+      <DataType>varchar(70)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="184" parent="51" name="nomenclador_departamento_uo_tpl_pkey">
+      <ObjectId>19652</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="185" parent="51" name="nomenclador_departamento_uo_tpl_nombre_key">
+      <ObjectId>19654</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="186" parent="51" name="nomenclador_departamento_uo_tpl_acronimo_key">
+      <ObjectId>19656</ObjectId>
+      <ColNames>acronimo</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="187" parent="51" name="nomenclador_departamento_uo_tpl_nombre_4e71169d_like">
+      <ObjectId>19709</ObjectId>
+      <ColNames>nombre</ColNames>
+    </index>
+    <index id="188" parent="51" name="nomenclador_departamento_uo_tpl_acronimo_75b39f44_like">
+      <ObjectId>19710</ObjectId>
+      <ColNames>acronimo</ColNames>
+    </index>
+    <key id="189" parent="51" name="nomenclador_departamento_uo_tpl_pkey">
+      <ObjectId>19653</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_departamento_uo_tpl_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="190" parent="51" name="nomenclador_departamento_uo_tpl_nombre_key">
+      <ObjectId>19655</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>nomenclador_departamento_uo_tpl_nombre_key</UnderlyingIndexName>
+    </key>
+    <key id="191" parent="51" name="nomenclador_departamento_uo_tpl_acronimo_key">
+      <ObjectId>19657</ObjectId>
+      <ColNames>acronimo</ColNames>
+      <UnderlyingIndexName>nomenclador_departamento_uo_tpl_acronimo_key</UnderlyingIndexName>
+    </key>
+    <column id="192" parent="52" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_estado_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_estado_id_seq</SequenceName>
+    </column>
+    <column id="193" parent="52" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="194" parent="52" name="descripcion">
+      <Position>3</Position>
+      <DataType>varchar(74)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="195" parent="52" name="nomenclador_estado_pkey">
+      <ObjectId>19664</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="196" parent="52" name="nomenclador_estado_nombre_key">
+      <ObjectId>19666</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="197" parent="52" name="nomenclador_estado_nombre_d420fdd0_like">
+      <ObjectId>19711</ObjectId>
+      <ColNames>nombre</ColNames>
+    </index>
+    <key id="198" parent="52" name="nomenclador_estado_pkey">
+      <ObjectId>19665</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_estado_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="199" parent="52" name="nomenclador_estado_nombre_key">
+      <ObjectId>19667</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>nomenclador_estado_nombre_key</UnderlyingIndexName>
+    </key>
+    <column id="200" parent="53" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_informado_a_tpl_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_informado_a_tpl_id_seq</SequenceName>
+    </column>
+    <column id="201" parent="53" name="persona_grupo">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="202" parent="53" name="nomenclador_informado_a_tpl_pkey">
+      <ObjectId>19674</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="203" parent="53" name="nomenclador_informado_a_tpl_persona_grupo_key">
+      <ObjectId>19676</ObjectId>
+      <ColNames>persona_grupo</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="204" parent="53" name="nomenclador_informado_a_tpl_persona_grupo_841dd3ad_like">
+      <ObjectId>19712</ObjectId>
+      <ColNames>persona_grupo</ColNames>
+    </index>
+    <key id="205" parent="53" name="nomenclador_informado_a_tpl_pkey">
+      <ObjectId>19675</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_informado_a_tpl_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="206" parent="53" name="nomenclador_informado_a_tpl_persona_grupo_key">
+      <ObjectId>19677</ObjectId>
+      <ColNames>persona_grupo</ColNames>
+      <UnderlyingIndexName>nomenclador_informado_a_tpl_persona_grupo_key</UnderlyingIndexName>
+    </key>
+    <column id="207" parent="54" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_mincom_persona_tpl_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_mincom_persona_tpl_id_seq</SequenceName>
+    </column>
+    <column id="208" parent="54" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="209" parent="54" name="cargo">
+      <Position>3</Position>
+      <DataType>varchar(74)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="210" parent="54" name="nomenclador_mincom_persona_tpl_pkey">
+      <ObjectId>19684</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="211" parent="54" name="nomenclador_mincom_persona_tpl_nombre_key">
+      <ObjectId>19686</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="212" parent="54" name="nomenclador_mincom_persona_tpl_nombre_1e32e85d_like">
+      <ObjectId>19713</ObjectId>
+      <ColNames>nombre</ColNames>
+    </index>
+    <key id="213" parent="54" name="nomenclador_mincom_persona_tpl_pkey">
+      <ObjectId>19685</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_mincom_persona_tpl_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="214" parent="54" name="nomenclador_mincom_persona_tpl_nombre_key">
+      <ObjectId>19687</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>nomenclador_mincom_persona_tpl_nombre_key</UnderlyingIndexName>
+    </key>
+    <column id="215" parent="55" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_trabajador_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_trabajador_id_seq</SequenceName>
+    </column>
+    <column id="216" parent="55" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(23)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="217" parent="55" name="apellidos">
+      <Position>3</Position>
+      <DataType>varchar(23)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="218" parent="55" name="cargo_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="219" parent="55" name="unidad_organizativa_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="220" parent="55" name="nomenclador_trabajador_pkey">
+      <ObjectId>19694</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="221" parent="55" name="nomenclador_trabajador_nombre_apellidos_fbff81dd_uniq">
+      <ObjectId>19878</ObjectId>
+      <ColNames>nombre
+apellidos</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="222" parent="55" name="nomenclador_trabajador_cargo_id_baa719d9">
+      <ObjectId>19719</ObjectId>
+      <ColNames>cargo_id</ColNames>
+    </index>
+    <index id="223" parent="55" name="nomenclador_trabajador_unidad_organizativa_id_0acda7aa">
+      <ObjectId>19722</ObjectId>
+      <ColNames>unidad_organizativa_id</ColNames>
+    </index>
+    <key id="224" parent="55" name="nomenclador_trabajador_pkey">
+      <ObjectId>19695</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_trabajador_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="225" parent="55" name="nomenclador_trabajador_nombre_apellidos_fbff81dd_uniq">
+      <ObjectId>19879</ObjectId>
+      <ColNames>nombre
+apellidos</ColNames>
+      <UnderlyingIndexName>nomenclador_trabajador_nombre_apellidos_fbff81dd_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="226" parent="55" name="nomenclador_trabajad_cargo_id_baa719d9_fk_nomenclad">
+      <ObjectId>19714</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>cargo_id</ColNames>
+      <RefTableId>19638</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_cargo</RefTableName>
+      <RefKeyName>nomenclador_cargo_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="227" parent="55" name="nomenclador_trabajad_unidad_organizativa__0acda7aa_fk_nomenclad">
+      <ObjectId>19723</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>unidad_organizativa_id</ColNames>
+      <RefTableId>19698</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_unidad_organizativa</RefTableName>
+      <RefKeyName>nomenclador_unidad_organizativa_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="228" parent="56" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <DefaultExpression>nextval(&apos;nomenclador_unidad_organizativa_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>nomenclador_unidad_organizativa_id_seq</SequenceName>
+    </column>
+    <column id="229" parent="56" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="230" parent="56" name="acronimo">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2600</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="231" parent="56" name="nomenclador_unidad_organizativa_pkey">
+      <ObjectId>19702</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="232" parent="56" name="nomenclador_unidad_organizativa_nombre_key">
+      <ObjectId>19704</ObjectId>
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="233" parent="56" name="nomenclador_unidad_organizativa_acronimo_key">
+      <ObjectId>19706</ObjectId>
+      <ColNames>acronimo</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="234" parent="56" name="nomenclador_unidad_organizativa_nombre_12359fc9_like">
+      <ObjectId>19720</ObjectId>
+      <ColNames>nombre</ColNames>
+    </index>
+    <index id="235" parent="56" name="nomenclador_unidad_organizativa_acronimo_93e179b8_like">
+      <ObjectId>19721</ObjectId>
+      <ColNames>acronimo</ColNames>
+    </index>
+    <key id="236" parent="56" name="nomenclador_unidad_organizativa_pkey">
+      <ObjectId>19703</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nomenclador_unidad_organizativa_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="237" parent="56" name="nomenclador_unidad_organizativa_nombre_key">
+      <ObjectId>19705</ObjectId>
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>nomenclador_unidad_organizativa_nombre_key</UnderlyingIndexName>
+    </key>
+    <key id="238" parent="56" name="nomenclador_unidad_organizativa_acronimo_key">
+      <ObjectId>19707</ObjectId>
+      <ColNames>acronimo</ColNames>
+      <UnderlyingIndexName>nomenclador_unidad_organizativa_acronimo_key</UnderlyingIndexName>
+    </key>
+    <column id="239" parent="57" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_ocurrencia_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_ocurrencia_id_seq</SequenceName>
+    </column>
+    <column id="240" parent="57" name="hora">
+      <Position>2</Position>
+      <DataType>time|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="241" parent="57" name="fecha">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="242" parent="57" name="ocurrencia">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="243" parent="57" name="estado_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="244" parent="57" name="reporta_id">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="245" parent="57" name="turno_guardia_id">
+      <Position>8</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="246" parent="57" name="ocurrencia_ocurrencia_pkey">
+      <ObjectId>19916</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="247" parent="57" name="ocurrencia_ocurrencia_estado_id_38c3b7b6">
+      <ObjectId>19959</ObjectId>
+      <ColNames>estado_id</ColNames>
+    </index>
+    <index id="248" parent="57" name="ocurrencia_ocurrencia_reporta_id_67f301bc">
+      <ObjectId>19961</ObjectId>
+      <ColNames>reporta_id</ColNames>
+    </index>
+    <index id="249" parent="57" name="ocurrencia_ocurrencia_turno_guardia_id_472c2a57">
+      <ObjectId>19980</ObjectId>
+      <ColNames>turno_guardia_id</ColNames>
+    </index>
+    <key id="250" parent="57" name="ocurrencia_ocurrencia_pkey">
+      <ObjectId>19917</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_ocurrencia_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="251" parent="57" name="ocurrencia_ocurrenci_estado_id_38c3b7b6_fk_nomenclad">
+      <ObjectId>19944</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>estado_id</ColNames>
+      <RefTableId>19660</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_estado</RefTableName>
+      <RefKeyName>nomenclador_estado_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="252" parent="57" name="ocurrencia_ocurrenci_reporta_id_67f301bc_fk_nomenclad">
+      <ObjectId>19954</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>reporta_id</ColNames>
+      <RefTableId>19648</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_departamento_uo_tpl</RefTableName>
+      <RefKeyName>nomenclador_departamento_uo_tpl_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="253" parent="57" name="ocurrencia_ocurrenci_turno_guardia_id_472c2a57_fk_ocurrenci">
+      <ObjectId>19981</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>turno_guardia_id</ColNames>
+      <RefTableId>19920</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ocurrencia_turno_guardia</RefTableName>
+      <RefKeyName>ocurrencia_turno_guardia_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="254" parent="58" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_composicion_turno_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_composicion_turno_id_seq</SequenceName>
+    </column>
+    <column id="255" parent="58" name="trabajador_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="256" parent="58" name="turno_guardia_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="257" parent="58" name="ocurrencia_composicion_turno_pkey">
+      <ObjectId>19886</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="258" parent="58" name="ocurrencia_composicion_turno_trabajador_id_c1dc871d">
+      <ObjectId>19931</ObjectId>
+      <ColNames>trabajador_id</ColNames>
+    </index>
+    <index id="259" parent="58" name="ocurrencia_composicion_turno_turno_guardia_id_59255362">
+      <ObjectId>19992</ObjectId>
+      <ColNames>turno_guardia_id</ColNames>
+    </index>
+    <key id="260" parent="58" name="ocurrencia_composicion_turno_pkey">
+      <ObjectId>19887</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_composicion_turno_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="261" parent="58" name="ocurrencia_composici_trabajador_id_c1dc871d_fk_nomenclad">
+      <ObjectId>19926</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>trabajador_id</ColNames>
+      <RefTableId>19690</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_trabajador</RefTableName>
+      <RefKeyName>nomenclador_trabajador_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="262" parent="58" name="ocurrencia_composici_turno_guardia_id_59255362_fk_ocurrenci">
+      <ObjectId>19993</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>turno_guardia_id</ColNames>
+      <RefTableId>19920</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ocurrencia_turno_guardia</RefTableName>
+      <RefKeyName>ocurrencia_turno_guardia_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="263" parent="59" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_entrega_guardia_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_entrega_guardia_id_seq</SequenceName>
+    </column>
+    <column id="264" parent="59" name="hora">
+      <Position>2</Position>
+      <DataType>time|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="265" parent="59" name="fecha">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="266" parent="59" name="elemento_entrega">
+      <Position>4</Position>
+      <DataType>varchar(256)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="267" parent="59" name="turno_guardia_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="268" parent="59" name="ocurrencia_entrega_guardia_pkey">
+      <ObjectId>19894</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="269" parent="59" name="ocurrencia_entrega_guardia_turno_guardia_id_ca7b59c8">
+      <ObjectId>19986</ObjectId>
+      <ColNames>turno_guardia_id</ColNames>
+    </index>
+    <key id="270" parent="59" name="ocurrencia_entrega_guardia_pkey">
+      <ObjectId>19895</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_entrega_guardia_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="271" parent="59" name="ocurrencia_entrega_g_turno_guardia_id_ca7b59c8_fk_ocurrenci">
+      <ObjectId>19987</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>turno_guardia_id</ColNames>
+      <RefTableId>19920</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ocurrencia_turno_guardia</RefTableName>
+      <RefKeyName>ocurrencia_turno_guardia_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="272" parent="60" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2628</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_informado_a_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_informado_a_id_seq</SequenceName>
+    </column>
+    <column id="273" parent="60" name="informado_a_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2628</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="274" parent="60" name="ocurrencia_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2628</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="275" parent="60" name="ocurrencia_informado_a_pkey">
+      <ObjectId>20004</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="276" parent="60" name="ocurrencia_informado_a_informado_a_id_f1db76ac">
+      <ObjectId>20016</ObjectId>
+      <ColNames>informado_a_id</ColNames>
+    </index>
+    <index id="277" parent="60" name="ocurrencia_informado_a_ocurrencia_id_a138b759">
+      <ObjectId>20017</ObjectId>
+      <ColNames>ocurrencia_id</ColNames>
+    </index>
+    <key id="278" parent="60" name="ocurrencia_informado_a_pkey">
+      <ObjectId>20005</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_informado_a_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="279" parent="60" name="ocurrencia_informado_informado_a_id_f1db76ac_fk_nomenclad">
+      <ObjectId>20006</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>informado_a_id</ColNames>
+      <RefTableId>19670</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_informado_a_tpl</RefTableName>
+      <RefKeyName>nomenclador_informado_a_tpl_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="280" parent="60" name="ocurrencia_informado_a_ocurrencia_id_a138b759_fk_ocurrencia_id">
+      <ObjectId>20011</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>ocurrencia_id</ColNames>
+      <RefTableId>19909</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ocurrencia</RefTableName>
+      <RefKeyName>ocurrencia_ocurrencia_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="281" parent="61" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_instruccion_relevo_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_instruccion_relevo_id_seq</SequenceName>
+    </column>
+    <column id="282" parent="61" name="hora">
+      <Position>2</Position>
+      <DataType>time|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="283" parent="61" name="fecha">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="284" parent="61" name="instruccion">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="285" parent="61" name="emitente_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="286" parent="61" name="estado_id">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="287" parent="61" name="ocurrencia_instruccion_relevo_pkey">
+      <ObjectId>19905</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="288" parent="61" name="ocurrencia_instruccion_relevo_emitente_id_6611da68">
+      <ObjectId>19942</ObjectId>
+      <ColNames>emitente_id</ColNames>
+    </index>
+    <index id="289" parent="61" name="ocurrencia_instruccion_relevo_estado_id_cd28a5e5">
+      <ObjectId>19943</ObjectId>
+      <ColNames>estado_id</ColNames>
+    </index>
+    <key id="290" parent="61" name="ocurrencia_instruccion_relevo_pkey">
+      <ObjectId>19906</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_instruccion_relevo_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="291" parent="61" name="ocurrencia_instrucci_emitente_id_6611da68_fk_nomenclad">
+      <ObjectId>19932</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>emitente_id</ColNames>
+      <RefTableId>19690</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_trabajador</RefTableName>
+      <RefKeyName>nomenclador_trabajador_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="292" parent="61" name="ocurrencia_instrucci_estado_id_cd28a5e5_fk_nomenclad">
+      <ObjectId>19937</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>estado_id</ColNames>
+      <RefTableId>19660</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_estado</RefTableName>
+      <RefKeyName>nomenclador_estado_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="293" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <DefaultExpression>nextval(&apos;ocurrencia_turno_guardia_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>ocurrencia_turno_guardia_id_seq</SequenceName>
+    </column>
+    <column id="294" parent="62" name="fecha_inicio">
+      <Position>2</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="295" parent="62" name="fecha_cierre">
+      <Position>3</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="296" parent="62" name="directivo_frente_empresa_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="297" parent="62" name="jefe_turno_mincom_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="298" parent="62" name="superior_mincom_id">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>2624</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="299" parent="62" name="ocurrencia_turno_guardia_pkey">
+      <ObjectId>19924</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="300" parent="62" name="ocurrencia_turno_guardia_directivo_frente_empresa_id_20594ae2">
+      <ObjectId>19977</ObjectId>
+      <ColNames>directivo_frente_empresa_id</ColNames>
+    </index>
+    <index id="301" parent="62" name="ocurrencia_turno_guardia_jefe_turno_mincom_id_188d132f">
+      <ObjectId>19978</ObjectId>
+      <ColNames>jefe_turno_mincom_id</ColNames>
+    </index>
+    <index id="302" parent="62" name="ocurrencia_turno_guardia_superior_mincom_id_8219f794">
+      <ObjectId>19979</ObjectId>
+      <ColNames>superior_mincom_id</ColNames>
+    </index>
+    <key id="303" parent="62" name="ocurrencia_turno_guardia_pkey">
+      <ObjectId>19925</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>ocurrencia_turno_guardia_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="304" parent="62" name="ocurrencia_turno_gua_directivo_frente_emp_20594ae2_fk_nomenclad">
+      <ObjectId>19962</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>directivo_frente_empresa_id</ColNames>
+      <RefTableId>19690</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_trabajador</RefTableName>
+      <RefKeyName>nomenclador_trabajador_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="305" parent="62" name="ocurrencia_turno_gua_jefe_turno_mincom_id_188d132f_fk_nomenclad">
+      <ObjectId>19967</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>jefe_turno_mincom_id</ColNames>
+      <RefTableId>19680</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_mincom_persona_tpl</RefTableName>
+      <RefKeyName>nomenclador_mincom_persona_tpl_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="306" parent="62" name="ocurrencia_turno_gua_superior_mincom_id_8219f794_fk_nomenclad">
+      <ObjectId>19972</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>superior_mincom_id</ColNames>
+      <RefTableId>19680</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>nomenclador_mincom_persona_tpl</RefTableName>
+      <RefKeyName>nomenclador_mincom_persona_tpl_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="307" parent="63" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <DefaultExpression>nextval(&apos;pendiente_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>pendiente_id_seq</SequenceName>
+    </column>
+    <column id="308" parent="63" name="fecha_hora">
+      <Position>2</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="309" parent="63" name="numero_he">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="310" parent="63" name="descripcion">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="311" parent="63" name="pronostico">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>3206</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="312" parent="63" name="estado_id">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="313" parent="63" name="tipo_id">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="314" parent="63" name="pendiente_pkey">
+      <ObjectId>28102</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="315" parent="63" name="pendiente_estado_id_f386cde5">
+      <ObjectId>28128</ObjectId>
+      <ColNames>estado_id</ColNames>
+    </index>
+    <index id="316" parent="63" name="pendiente_tipo_id_dba614cf">
+      <ObjectId>28141</ObjectId>
+      <ColNames>tipo_id</ColNames>
+    </index>
+    <key id="317" parent="63" name="pendiente_pkey">
+      <ObjectId>28103</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pendiente_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="318" parent="63" name="pendiente_estado_id_f386cde5_fk_pendiente_estado_id">
+      <ObjectId>28123</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>estado_id</ColNames>
+      <RefTableId>28084</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>pendiente_estado</RefTableName>
+      <RefKeyName>pendiente_estado_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="319" parent="63" name="pendiente_tipo_id_dba614cf_fk_pendiente_tipo_id">
+      <ObjectId>28142</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>tipo_id</ColNames>
+      <RefTableId>28114</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>pendiente_tipo</RefTableName>
+      <RefKeyName>pendiente_tipo_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="320" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <DefaultExpression>nextval(&apos;pendiente_elemento_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>pendiente_elemento_id_seq</SequenceName>
+    </column>
+    <column id="321" parent="64" name="descripcion">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="322" parent="64" name="pendiente_elemento_pkey">
+      <ObjectId>28080</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="323" parent="64" name="pendiente_elemento_pkey">
+      <ObjectId>28081</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pendiente_elemento_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="324" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <DefaultExpression>nextval(&apos;pendiente_estado_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>pendiente_estado_id_seq</SequenceName>
+    </column>
+    <column id="325" parent="65" name="nombre">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="326" parent="65" name="color">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="327" parent="65" name="pendiente_estado_pkey">
+      <ObjectId>28091</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="328" parent="65" name="pendiente_estado_pkey">
+      <ObjectId>28092</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pendiente_estado_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="329" parent="66" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <DefaultExpression>nextval(&apos;pendiente_pendiente_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>pendiente_pendiente_id_seq</SequenceName>
+    </column>
+    <column id="330" parent="66" name="elemento_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="331" parent="66" name="pendiente_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="332" parent="66" name="pendiente_pendiente_pkey">
+      <ObjectId>28110</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="333" parent="66" name="pendiente_pendiente_elemento_id_1ae0efb2">
+      <ObjectId>28139</ObjectId>
+      <ColNames>elemento_id</ColNames>
+    </index>
+    <index id="334" parent="66" name="pendiente_pendiente_pendiente_id_e517aea9">
+      <ObjectId>28140</ObjectId>
+      <ColNames>pendiente_id</ColNames>
+    </index>
+    <key id="335" parent="66" name="pendiente_pendiente_pkey">
+      <ObjectId>28111</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pendiente_pendiente_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="336" parent="66" name="pendiente_pendiente_elemento_id_1ae0efb2_fk_pendiente">
+      <ObjectId>28129</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>elemento_id</ColNames>
+      <RefTableId>28073</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>pendiente_elemento</RefTableName>
+      <RefKeyName>pendiente_elemento_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="337" parent="66" name="pendiente_pendiente_pendiente_id_e517aea9_fk_pendiente_id">
+      <ObjectId>28134</ObjectId>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ColNames>pendiente_id</ColNames>
+      <RefTableId>28095</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>pendiente</RefTableName>
+      <RefKeyName>pendiente_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="338" parent="67" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <DefaultExpression>nextval(&apos;pendiente_tipo_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>pendiente_tipo_id_seq</SequenceName>
+    </column>
+    <column id="339" parent="67" name="nombre">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="340" parent="67" name="descripcion">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3206</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="341" parent="67" name="pendiente_tipo_pkey">
+      <ObjectId>28121</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="342" parent="67" name="pendiente_tipo_pkey">
+      <ObjectId>28122</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pendiente_tipo_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

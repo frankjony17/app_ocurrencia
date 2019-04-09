@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - ocurrencia_cdnt_db@localhost" uuid="cdf8c2fe-fd32-4519-a5da-188bee9f7ba5">
+      <database-info product="PostgreSQL" version="9.5.0" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>cdnt_usr</user-name>
+      <introspection-schemas>ocurrencia_cdnt_db:public</introspection-schemas>
+    </data-source>
+    <data-source name="Django default" uuid="108c6f3c-1d87-4e5c-a358-dacfacd34eed">
+      <database-info product="PostgreSQL" version="9.5.0" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>cdnt_usr</user-name>
+      <introspection-schemas>ocurrencia_cdnt_db:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block javascripts %}<script type="text/javascript">
+    Ext.application({
+        name: 'etecsa',
+        appFolder: '/static',
+        controllers: [
+            'ocurrencia_viewport',
+            'ocurrencia_grid',
+            'pendiente_grid'
+        ],
+        launch: function() {
+            Ext.create('etecsa.view.ocurrencia_viewport', {
+                user: "{{ user.trabajador.nombre }} {{ user.trabajador.apellidos }}"
+            });
+        }
+    });
+</script>{% endblock %}
